@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head th:replace="layouts/app :: head">
+<meta charset="UTF-8">
+<title th:text="#{form.title}"></title>
+</head>
+<body>
+<header th:replace="layouts/app :: header"></header>
+<section th:replace="layouts/editarCliente :: editarCliente"></section>
+<footer th:replace="layouts/app :: footer"></footer>
+	
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layouts/app :: head">
+<meta charset="UTF-8" />
+<title th:text="#{plantilla.titulo}"></title>
+</head>
+<body>
+	<header th:replace="layouts/app :: header"></header>
+
+	<section id="actions" class="py-4 mb-4 bg-light">
+		<div class="container">
+			<div class="row"></div>
+		</div>
+	</section>
+	<section id="login">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 mx-auto">
+					<div class="card">
+						<div class="card-header">
+							<h4>Login</h4>
+						</div>
+						<div class="card-body">
+							<form th:action="@{/login}" method="POST">
+								<div class="form-group">
+									<label for="username">Username:</label> 
+									<input type="text" class="form-control"
+									name="username" id="username">
+								</div>
+								<div class="form-group">
+									<label
+									for="password">Password:</label> 
+									<input type="password" class="form-control"
+									name="password" id="password">
+								</div>
+								 <input class="btn btn-primary btn-block"
+									type="submit" value="Login">
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer th:replace="layouts/app :: footer"></footer>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layouts/app :: head">
+<meta charset="UTF-8" />
+<title th:text="#{plantilla.titulo}"></title>
+</head>
+<body>
+	<h1>Acceso Denegado</h1>
+	<div>
+	No tienes permisos para ver esta página o ejecutar esta acción
+	<br/>
+	<a th:href="@{/}" th:text="#{form.regresar}"></a>
+	</div>
+</body>
+</html>
